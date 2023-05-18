@@ -42,6 +42,6 @@ public class ImgControllerEx {
 
     @GetMapping("/test")
     public Response<String> test(){
-        return Response.success("TestOk");
+        return Response.success("TestNotOkay");
     }
 }
