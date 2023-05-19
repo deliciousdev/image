@@ -7,11 +7,11 @@ import lombok.Getter;
 import javax.persistence.*;
 
 
-@Table(name = "users")
+@Table(name = "users2")
 @Entity
 @Getter
 @AllArgsConstructor
-public class User {
+public class User2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,9 +20,9 @@ public class User {
 
     private String username;
 
-    protected User(){}
+    protected User2(){}
 
-    public static User of(String username){
-        return new User(null, username);
+    public static User2 of(String username){
+        return new User2(null, username);
     }
 }
