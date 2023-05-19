@@ -78,7 +78,7 @@ public class S3Uploader {
     //파일 명으로 S3에서 이미지 삭제
     public String deleteImage(String url) throws UnsupportedEncodingException{
         String fileUrl = URLDecoder.decode(url, "UTF-8"); //한글 인코딩
-        String s3 = "noldaga-s3";
+        String s3 = "nullnul"; //이거 디렉토리 명 안맞으면 삭제 안됨.
         int index = fileUrl.indexOf(s3);
         String str = fileUrl.substring(index+s3.length());
         int lastIndex = str.lastIndexOf('/');

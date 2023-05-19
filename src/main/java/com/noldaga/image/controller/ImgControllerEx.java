@@ -29,7 +29,7 @@ public class ImgControllerEx {
             @RequestPart(value="file",required = false) MultipartFile img) throws IOException
     {
         System.out.println("ImgControllerEx.uploadImg");
-        String urls = s3Uploader.upload(img, "/sample");
+        String urls = s3Uploader.upload(img, "/sample2");
         return Response.success(requestDto.getNickname()+"님이 "+urls+" 를 올렸습니다.");
     }//이미지 하나 넣을때 이런식..
 
